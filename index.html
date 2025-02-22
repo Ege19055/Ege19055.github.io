@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Ege KOCA - Portfolyo</title>
-  <link href="./public/style.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ege Koca - Portfolyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link href="./public/style.css" rel="stylesheet">
 </head>
-
 <body class="bg-dark text-light">
-  <div class="container-fluid bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://avatars.githubusercontent.com/u/125147797?v=4" class="w-100 rounded-circle mt-5 mb-5">
+    
+    <header class="container-fluid bg-primary text-center py-5">
+        <img src="https://avatars.githubusercontent.com/u/125147797?v=4" class="rounded-circle mb-3" width="150">
+        <h1 class="fw-bold">Ege Koca</h1>
+        <p class="lead">Tam Zamanlı Web Geliştirici</p>
+    </header>
+    
+    <section class="container text-center mt-5">
+        <h2>Hakkımda</h2>
+        <p class="mt-3">Ben 17 yaşındayım ve 3 yıldır yazılım ile ilgileniyorum. Web geliştirme alanında <b>HTML, CSS, JavaScript, PHP</b> gibi teknolojileri aktif olarak kullanıyorum. 
+        Backend ve Frontend geliştirmede deneyimliyim.</p>
+    </section>
+    
+    <section class="container mt-5">
+        <h2 class="text-center">Projelerim</h2>
+        <div id="repos" class="row justify-content-center mt-4">
+            <!-- GitHub projeleri burada listelenecek -->
         </div>
-        <div class="col-md-8 text-light mt-5 mb-5">
-          <h3>Merhabalar, Ben Ege Koca</h3>
-          <label>
-            Ben 17 yaşındayım, 3 yıldır yazılım ile ilgileniyorum.<br>
-            <b>Python</b>,<b>C++</b>,<b>C#</b>,<b>GO</b>,<b>CSS</b>,<b>HTML</b>,<b>JavaScript</b> ve <b>PHP</b> kullandım.<br>
-          </label>
+    </section>
+    
+    <section class="container text-center mt-5">
+        <h2>İletişim</h2>
+        <p class="mt-3">Bana ulaşmak için aşağıdaki bağlantıları kullanabilirsiniz.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="https://github.com/egekoca" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:ege@example.com" class="btn btn-outline-light"><i class="fas fa-envelope"></i> E-posta</a>
+            <a href="https://linkedin.com/in/egekoca" class="btn btn-outline-light"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div id="github" class="mt-5">
-
-    </div>
-    <div id="repos" class="mt-5 row justify-content-stretch">
-    </div>
-  </div>
-  <script src="./public/script.js"></script>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/script.js"></script>
 </body>
-
 </html>
